@@ -1,0 +1,16 @@
+table {
+  width: 100%;
+}
+
+.details-btn {
+  transition: 200ms;
+  &:hover {
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  ::ng-deep .mdc-data-table__content .mat-mdc-row .mdc-data-table__cell {
+    padding: 0 2px !important;
+  }
+}

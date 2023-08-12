@@ -1,0 +1,13 @@
+<div class="cont">
+  <div class="user-item"><b>ID</b> - {{ currentUser.id }}</div>
+  <div class="user-item"><b>მომხმარებლის ID</b> - {{ currentUser.userId }}</div>
+  <div class="user-item"><b>სათაური</b> - {{ currentUser.title }}</div>
+  <div class="user-item"><b>აღწერა</b> - {{ currentUser.body }}</div>
+  <button
+    mat-raised-button
+    color="primary"
+    [routerLink]="'post/' + currentUser.id"
+  >
+    მომხმარებლის პოსტები
+  </button>
+</div>
